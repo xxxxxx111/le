@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!--<style>
+			{
+				#3a{
+					display: block;
+					color: red;
+				}
+			}
+		</style>-->
+		<script>
+			function createA(){
+				x=document.createElement("a");
+				y=document.createTextNode("遇见美好生活");
+				x.appendChild(y);
+				//document.div.appendChild(x);
+				x.setAttribute("href","#");
+				Element=document.getElementById("div1");
+				Element.appendChild(x);
+				x.style.color="yellow";
+				x.style.backgroundColor="red";
+				x.style.textDecoration="none";
+//				x.style.marginTop="100px";
+			}
+			
+			function removeP(){
+				x=document.getElementById("2p");
+				x.parentNode.removeChild(x);
+//				x.removeChild(x.childNodes[2]);
+//				x.style.marginTop="100px";
+					
+				}
+			
+			function removeA(){
+				parent=document.getElementById("div3");
+				child=document.getElementById("3a");
+//				parent.removeChild(child);
+//				child.style.textDecoration="none";
+                parent.removeChild(child);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1" style="border: 2px solid greenyellow;">
+			<p>你好，世界</p>
+		</div>
+		<button onclick="createA()">添加a元素</button>
+
+		
+		<div id="div2" style="border: 2px solid greenyellow;">
+			<h3>第一记</h3>
+			<p id="2p">哆啦A梦</p>
+			<p id="2p">哆啦A梦</p>
+            <p id="2p">哆啦A梦</p>
+            <button onclick="removeP()">删除p元素</button>
+		</div>
+		
+		
+		<div id="div3" style="border: 2px solid greenyellow;">
+			<h3>第二记 </h3>
+			<a href="#" id="3a">樱桃小丸子</a>
+			<a href="#" id="3a">樱桃小丸子</a>
+			<a href="#" id="3a">樱桃小丸子</a>
+			<button onclick="removeA()">删除a元素</button>
+		</div>
+		
+		
+		<div id="div4" style="border: 2px solid greenyellow;">
+			<h3>第三记</h3>
+			<button onclick="document.body.style.backgroundColor='red'">背景色</button>
+	</body>
+</html>
