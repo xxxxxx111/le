@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			table{
+				width: 500px;
+				margin: 0 auto;
+			}
+			form{
+				margin: 0 400px;
+			}
+			button{
+				margin: 20px 400px;
+				/*margin-bottom: 20px;*/
+			}
+		</style>
+		<script>
+			var count = 4;
+			function zengJia(){
+				newtr=document.createElement("tr");
+				ta=document.getElementById("ta1");
+				ta.appendChild(newtr);
+				th1=document.createElement("th");
+				td2=document.createElement("td");
+				td3=document.createElement("td");
+				td4=document.createElement("td");
+				newtr.appendChild(th1);
+				newtr.appendChild(td2);
+				newtr.appendChild(td3);
+				newtr.appendChild(td4);
+				xm=document.myform.xingming.value;
+				xb=document.myform.sex.value;
+				th1.innerHTML=count;
+				count++;
+				td2.innerHTML=xm;
+				td3.innerHTML=xb;
+				newa=document.createElement("a");
+				td4.appendChild(newa);
+				newa.setAttribute("href","#");
+				newa.setAttribute("onclick","del(this)");
+				newa.innerHTML="删除";
+			}
+			function del(obj)
+{
+var tr=obj.parentNode.parentNode;
+tr.parentNode.removeChild(tr);
+}
+			
+		</script>
+	</head>
+	<body>
+		
+		<form name="myform">
+		<span onmouseover="style.color='red'" onmouseout="style.color='black'">姓名： </span><input type="text" name="xingming"  id="xm"/>
+			性别：<input type="radio" name="sex" value="男"/>男
+			<input type="radio" name="sex" value="女"/>女
+		</form>
+		<button onclick="zengJia()">增加按钮</button>
+		<table border="1px"  cellspacing="0" id="ta1" >
+			<tr bgcolor="#dfdfdf" >
+				<td>
+					编号
+				</td>
+				<td>
+					姓名
+				</td>
+				<td>
+					性别
+				</td>
+				<td>
+					操作
+				</td>
+			</tr>
+			<tr  id="row">
+			
+				<th>1</th>
+				<td >张三</td>
+				<td >女</td>
+				<td ><a href="#" onclick="del(this)">删除</a></td>
+			</tr>
+			<tr id="row">
+				<th >2</th>
+				<td >李四</td>
+				<td>女</td>
+				<td><a  href="#" onclick="del(this)" >删除</a></td>
+			</tr>
+			<tr id="row">
+				<th>3</th>
+				<td>王五</td>
+				<td>男</td>
+				<td><a href="#" onclick="del(this)" >删除 </a></td>
+			</tr>
+		</table>
+	</body>
+</html>
