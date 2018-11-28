@@ -1,0 +1,68 @@
+body, html { font-size: 100%; 	padding: 0; margin: 0;}
+
+/* Reset */
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+/*.clearfix:after {
+	clear: both;
+}*/
+
+.col-md-4 {
+	height: px;
+	width: 100%;
+	margin: 0,auto;
+	/*padding: 10px;*/
+	
+}
+.img-thumbnail{
+	height: 500px;}
+
+
+body{
+	/*height: 5000px;*/
+	/*overflow: hidden;*/
+	background: /*#494A5F*/#dfdfdf;
+	color: #D5D6E2;
+	font-weight: 900;
+	font-size: 1em;
+	font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
+}
+
+/*<style>*/
+			/*.*{
+				margin: 0 ;
+				padding: 0;
+			}*/
+			/*.box{
+				margin: 0 auto;
+				width: 960px;
+				font-size: x-large;            /*有用有用有用*/
+			}*/
+			/*.ul{
+				height: 500px;
+				width: 960px;
+				
+			}
+			.li{
+				width: 960px;
+				overflow: hidden;
+				line-height: 20px;
+				/*font-size: x-large;*/       /* 没用没用没用*/*/
+			}
+			/*.gaikuang .shichang{
+				float: left;
+			}*/
+		/*</style>*/
