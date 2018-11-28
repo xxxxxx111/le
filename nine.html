@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>创业计划书</title>
+
+<link type="text/css" rel="stylesheet" href="css/style.css">
+<!--<style type="text/css">
+	.a{
+		text-decoration: none;
+	}
+</style>-->
+</head>
+<body>
+
+<section class="pc-banner">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide swiper-slide-center none-effect">
+				<a href="gaikuang-shichang.html" target="_blank" >
+					<h2>项目概况及市场背景</h2>
+					<img src="img/maidou.jpg"  >
+				</a>
+				<div class="layer-mask"></div>
+			</div>
+			<div class="swiper-slide">
+				<a href="jingzhengli.html" target="_blank">
+					<h2>核心竞争力</h2>
+					<img src="img/meicaikorou.jpg">
+				</a>
+				<div class="layer-mask"></div>
+			</div>
+			<div class="swiper-slide">
+				<a href="yingxiao-yunying.html" target="_blank">
+					<h2>营销计划及运营计划</h2>
+					<img src="img/yunying.jpg">
+				</a>
+				<div class="layer-mask"></div>
+			</div>
+			<div class="swiper-slide">
+				<a href="tozi-lirun-fazhan.html" target="_blank">
+					<h2>投资-利润-发展</h2>
+					<img src="img/tozi.jpg">
+				</a>
+				<div class="layer-mask"></div>
+			</div>
+			<div class="swiper-slide">
+				<a href="lianxi.html" target="_blank">
+					<h2>联系我们吧</h2>
+					<img src="img/联系我吧.jpg">
+				</a>
+				<div class="layer-mask"></div>
+			</div>
+		</div>
+		<div class="button">
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+	</div>
+</section>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript">
+
+	window.onload = function() {
+		var swiper = new Swiper('.swiper-container',{
+			autoplay: false,
+			speed: 1000,
+			autoplayDisableOnInteraction: false,
+			loop: true,
+			centeredSlides: true,
+			slidesPerView: 2,
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			prevButton: '.swiper-button-prev',
+			nextButton: '.swiper-button-next',
+			onInit: function(swiper) {
+				swiper.slides[2].className = "swiper-slide swiper-slide-active";
+			},
+			breakpoints: {
+				668: {
+					slidesPerView: 1,
+				}
+			}
+		});
+	}
+
+
+</script>
+<!--<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+<p>来源：<a href="http://www.lanrenzhijia.com/" target="_blank">懒人</a></p>
+</div>-->
+</body>
+</html>
