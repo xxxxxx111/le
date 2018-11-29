@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.* {
+	margin: 0;
+	padding: 0;
+}
+.body{
+	height: 100%;
+}
+
+.da {
+	width: 960px;
+	overflow: visible;
+	/*重要重要*/
+	margin: 0 auto;
+}
+
+.logo {
+	width: 90px;
+	height: 90px;
+	float: left;
+}
+
+.sosuo {
+	width: 600px;
+	height: 90px;
+	float: left;
+}
+
+.kuang {
+	position: relative;
+	height: 39px;
+	margin: 24px 4px 0 184px;
+	border: 1px solid #dfdfdf;
+	border-radius: 20px;
+}
+
+.shuru {
+	position: relative;
+	line-height: 30px;
+	margin: 0 0 0 2px;
+	width: 230px;
+	border: none;
+}
+
+.sosuobtn {
+	position: absolute;
+	/*注意注意注意*/
+	bottom: 1px;
+	/*注意注意注意*/
+	width: 111.5px;
+	border: none;
+	/*注意注意注意*/
+	color: #fff;
+	background-color: #1479d7;
+	/*注意注意注意*/
+	border-radius: 20px;
+	font-size: 16px;
+	padding: 0 24px;
+	line-height: 20px;
+	/*注意注意注意*/
+}
+
+.menu {
+	background-color: #1479D7;
+	height: 50px;
+	width: 960px;
+	float: left;
+	border-radius: 3px;
+}
+
+.liebiao {
+	line-height: 18px;
+	position: absolute;
+}
+
+.liebiao li {
+	float: left;
+	list-style: none;
+	margin-right: 24px;
+	font-size: 20px;
+	/*  注意注意注意注意注意注意注意*/
+}
+
+.a:link {
+	text-decoration: none;
+	/*  注意注意注意注意注意注意注意*/
+	color: white;
+}
+
+.a2:visited {
+	/*  注意注意注意注意注意注意注意*/
+	color: darkgray;
+	/*  注意注意注意注意注意注意注意*/
+}
+
+.a2:hover {
+	background-color: #F3F6F8;
+	/*  注意注意注意注意注意注意注意*/
+	color: red;
+}
+
+.a2:active {
+	text-decoration: none;
+	/*  注意注意注意注意注意注意注意*/
+	color: yellow;
+}
+
+.ad {
+	height: 130px;
+	width: 960px;
+	float: left;
+	margin: 15px 0 0 0;
+}
+
+.ad1 {
+	float: left;
+	padding: 0 0 0 3px;
+}
+
+.ad2 {
+	float: left;
+	margin: 0 0 0 10px;
+}
+
+.blank1 {
+	height: 20px;
+	width: 960px;
+	float: left;
+}
+
+.da2 {
+	height: 550px;
+	width: 960px;
+	float: left;
+}
+
+.yao {
+	height: 480px;
+	width: 300px;
+	float: left;
+}
+
+.jin {
+	height: 480px;
+	width: 300px;
+	float: left;
+}
+
+.title {
+	width: 300px;
+	height: 50px;
+	line-height: 40px;
+	border-bottom: 1px solid #1479D7;
+	/*重要重要重要重要重要重要重要重要*/
+}
+
+.yao1 {
+	float: left;
+	color: #1479D7;
+	line-height: 10px;
+}
+
+.tit-line {
+	display: inline-block;
+	width: 1px;
+	height: 30px;
+	/*唉唉唉唉唉唉唉*/
+	border-left: 1px solid #1479D7;
+	/*-left重要重要*/
+	margin: 20px 10px;
+	float: left;
+}
+
+.main {
+	width: 300px;
+	height: 490px;
+	float: left;
+}
+
+.mainnews {
+	list-style: none;
+	float: left;
+	/*margin: 0;*/
+	padding: 0;
+	line-height: 29px;
+	cursor: pointer;
+	width: 300px;
+}
+
+.a-da {
+	float: left;
+	text-decoration: none;
+	width: 300px;
+}
+
+.blank2 {
+	float: left;
+	width: 30px;
+	height: 490px;
+}
+
+.right {
+	width: 300px;
+	height: 480px;
+	float: left;
+}
+
+.r-top {
+	width: 300px;
+	height: 200px;
+}
+
+.r-bottom {
+	width: 300px;
+	height: 290px;
+}
+
+.blanket {
+	list-style: none;
+	line-height: 22px;
+	border: 1px solid #cae0f3;
+	overflow: hidden;
+	padding-left: 0px;
+}
+
+.li1 {
+	height: 39px;
+	line-height: 22px;
+	padding-left: 5px;
+	/*重要重要重要重要*/
+	padding-top: 10px;
+	overflow: hidden;
+	padding-bottom: 0px;
+}
+
+.li2 {
+	height: 39px;
+	line-height: 22px;
+	padding-left: 5px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	background-color: #F3F6F8;
+}
+
+.li {
+	margin: 2px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.li:hover{
+	color: red;
+}
+#a.hover{
+	color: red;
+}
+
+
+.bottom-1 {
+	line-height: 10px;
+	/*bottom-1,title,height 不出现   不懂*/
+	cursor: pointer;
+	color: #1479D7;
+	float: left;
+}
+
+.bottom-2 {
+	float: left;
+	cursor: pointer;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+#a {
+	text-decoration: none;
+}
+
+.footer {
+	      width: 960px;
+		  height: 200px;
+		  float: left;
+		  border-top: 1px solid #cae0f3;
+          
+          padding-left: 240px; }
+          .blank4{
+          	width: 960px;
+          	height: 20px;
+          } 
+                           /*   注意注意注意*/
+	
+</style>
+	</head>
+	<body>
+		<div class="da">
+			<div class="logo">
+				<img src="img/u=1337159362,2717123627&fm=26&gp=0.jpg" width="90px" height="80px">
+			</div>
+			<div class="sosuo">
+				<div class="kuang">
+					<span style="margin: 0px 15px;">网页</span>                          <!--注意注意注意注意注意注意-->
+					<input class="shuru" type="text">
+					<button class="sosuobtn" type="submit">搜狗搜索</button>
+				</div>
+			</div>
+			<div class="menu" >
+				<ul class="liebiao" style="color: white;">
+					<li><a target="_blank" href="http://news.xtu.edu.cn/" >首页</a></li>
+					<li><a target="_blank" href="http://news.xtu.edu.cn/" >综合新闻</a></li>
+					<li><a target="_blank" href="http://news.xtu.edu.cn/" >教学科研</a></li>
+					<li><a target="_blank" href="http://news.xtu.edu.cn/" >校园生活</a></li>
+					<li><a target="_blank" href="http://news.xtu.edu.cn/" >学子风采</a></li>
+					<li><a target="_blank" href="http://news.xtu.edu.cn/" >湘大校友</a></li>
+					<li><a target="_blank" href="http://news.xtu.edu.cn/" >专题新闻</a></li>
+					<li><a target="_blank" href="http://news.xtu.edu.cn/" >视频新闻</a></li>
+					<li><a target="_blank" href="http://news.xtu.edu.cn/" >在线投稿</a></li>
+				</ul>
+			</div>
+			<div class="ad">
+				<div class="ad1">
+					<img src="img/five-1.jpeg" width="600px" height="125px"> 
+				</div>
+				<div class="ad2">
+					<img src="img/five-2.jpg" width="300px" height="125px"> 
+				</div>
+			</div>
+			<div class="blank1"></div>
+			<div class="da2">
+				<div class="yao">
+					<div class="title">
+						<h2 class="yao1" style="cursor: pointer;">要闻</h2>
+						<span class="tit-line"></span>
+						<h2 class="yao1" style="cursor: pointer;">湘大新闻</h2>
+					</div>
+					<div class="main">
+						<ul class="mainnews">
+							<li><a class="a-da">我校5个产学研融合创新团队获湘潭市补助</a></li>
+							<li><a class="a-da">我校代表团访问澳大利亚阿德莱德大学和堪培拉大学</a></li>
+							<li><a class="a-da">我校获ACM国际大学生程序设计竞赛亚洲区域赛金奖</a></li>
+							<li><a class="a-da">学校召开各民主党派和无党派人士座谈会</a></li>
+							<li><a class="a-da">校长周益春专题调研碧泉书院建设发展情况</a></li>
+							<li><a class="a-da">校地双方协商推进2018年度合作项目顺利落地</a></li>
+							<li><a class="a-da">我校健儿在省第十一届大学生运动会上创佳绩</a></li>
+							<li><a class="a-da">第三十八届学生田径运动会举行</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				<div class="blank2"></div>
+				<div class="jin">
+					<div class="title">
+						<h2 class="yao1" style="cursor: pointer;">今日话题</h2>
+						<div class="main">
+							<ul class="mainnews">
+								<li><a class="a-da">【湖南经视】湖南 大学生热议：正青春 向梦想迈进</a></li>
+								<li><a class="a-da">【湖南日报】努力办好人民满意的教育</a></li>
+								<li><a class="a-da">【红网】【时代脊梁】沧南：时代信仰的“基石”</a></li>
+								<li><a class="a-da">副校长黄竹青在湖南校企创新论坛上作典型发言</a></li>
+								<li><a class="a-da">1000余名学生诵读中华经典</a></li>
+								<li><a class="a-da">欧阳建权教授获全国高校人工智能大数据教育教学创新奖</a></li>
+								<li><a class="a-da">《昨日青空》超前看片会在我校举行</a></li>
+								<li><a class="a-da">李捷教授做客领航讲堂讲授“新时代新思想与时代新人”</a></li>
+							</ul>
+						</div>		
+					</div>
+				</div>
+				<div class="blank2"></div>
+				<div class="right">
+				<div class="r-top">
+					<ul class="blanket">
+						<li class="li1">
+							<a class="li" href="#">媒体湘大</a>
+							<a class="li" href="#">湘大学人</a>
+							<a class="li" href="#">校报电子版</a>
+							<a class="li" href="#"></a>
+						</li>
+						<li class="li2">
+							<a class="li" href="#">专题新闻</a>
+							<a class="li" href="#">媒体传真</a>
+							<a class="li" href="#">专题短片</a>
+							<a class="li" href="#">在线调查</a>
+						</li>
+						<li class="li1">
+							<a class="li" href="#">今日热播</a>
+							<a class="li" href="#">视觉焦点</a>
+							<a class="li" href="#">电影</a>
+							<a class="li" href="#">音乐</a>
+						</li>
+						<li class="li2">
+							<a class="li" href="#">图话</a>
+							<a class="li" href="#">文化</a>
+							<a class="li" href="#">历史</a>
+							<a class="li" href="#">科技</a>
+						</li>
+					</ul>
+					
+				</div>
+				<div class="r-bottom">
+					<div class="title">
+						<h2 class="bottom-1">为你推荐</h2>
+					</div>
+					<div class="bottom-2">
+						<img src="img/five-4.jpg" height="150px" width="150px">
+						<img src="img/five-3.jpg" height="150px" width="120px">
+						<p><font size="3" color="#1479D7"><a href="#" id="a">书香遇见墨香———图书馆字画的故事</a></font></p>
+					</div>
+				</div>
+				</div>
+				<div class="blank4"></div>
+				<div class="footer">
+					<div class="footer-1">
+						关于湘大新闻网&nbsp;&nbsp;&nbsp;<a href="#" id="a" >湘潭大学党委宣传部</a>
+						&nbsp;&nbsp;&nbsp;地址：中国湖南湘潭. 邮编：411105<br><br>
+                      Copyright&nbsp; 2001-2018&nbsp;&nbsp;All&nbsp;Rights&nbsp; Reserved				
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+	</body>
+</html>
