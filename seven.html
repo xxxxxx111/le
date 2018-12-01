@@ -26,13 +26,24 @@
 //				x.style.marginTop="100px";
 			}
 			
-			function removeP(){
-				x=document.getElementById("2p");
-				x.parentNode.removeChild(x);
+//			function removeP(){
+//				x=document.getElementById("2p");
+//				x.parentNode.removeChild(x);
 //				x.removeChild(x.childNodes[2]);
 //				x.style.marginTop="100px";
 					
-				}
+//				}
+
+					
+                    function mozCancelRequestAnimationFrame(){
+						var div=document.getElementById("div2")
+						var y=div.childNodes;
+						for (i=0;i<y.length;i++){
+							if (y[i].tagName=="P")	div.removeChild(y[i])
+						}
+//						x.removeChild(x.childNode[0]);
+					}
+				
 			
 			function removeA(){
 				parent=document.getElementById("div3");
@@ -55,7 +66,7 @@
 			<p id="2p">哆啦A梦</p>
 			<p id="2p">哆啦A梦</p>
             <p id="2p">哆啦A梦</p>
-            <button onclick="removeP()">删除p元素</button>
+            <button onclick="mozCancelRequestAnimationFrame()">一下删除所有p元素</button>
 		</div>
 		
 		
@@ -64,7 +75,7 @@
 			<a href="#" id="3a">樱桃小丸子</a>
 			<a href="#" id="3a">樱桃小丸子</a>
 			<a href="#" id="3a">樱桃小丸子</a>
-			<button onclick="removeA()">删除a元素</button>
+			<button onclick="removeA()">一个一个删除a元素</button>
 		</div>
 		
 		
